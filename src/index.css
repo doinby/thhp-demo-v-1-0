@@ -1,9 +1,17 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Geologica:wght@400;800&family=Raleway:wght@400;800&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@300;800&family=Noto+Sans:wght@300;800&family=Raleway:wght@300;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@300;800&family=Noto+Sans:wght@300;800&family=Raleway:wght@300;600;800&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+	--emerald-300: rgba(110, 231, 183, 1);
+	--teal-300: rgba(94, 234, 212, 1);
+	--sky-300: rgba(125, 211, 252, 1);
+	--violet-200: rgba(221, 214, 254, 1);
+	--yellow-200: rgba(254, 240, 138, 1);
+}
 
 @layer base {
 	body {
@@ -31,12 +39,6 @@
 		@apply grow shrink-0 basis-auto flex place-items-center;
 	} */
 
-	/* header,
-	main,
-	footer {
-		@apply outline outline-[0.5px] outline-teal-300;
-	} */
-
 	#root {
 		background: rgb(110, 231, 183);
 		background: -moz-linear-gradient(
@@ -44,7 +46,7 @@
 			rgba(110, 231, 183, 0) 10%,
 			rgba(110, 231, 183, 0.1) 30%,
 			rgba(94, 234, 212, 0.2) 40%,
-			/* rgba(125, 211, 252, 0.5) 45	 %, */ rgba(125, 211, 252, 0.5) 53%,
+			rgba(125, 211, 252, 0.5) 53%,
 			rgba(221, 214, 254, 0.5) 57%,
 			rgba(254, 240, 138, 0.1) 65%,
 			rgba(254, 240, 138, 0.1) 70%,
@@ -55,7 +57,7 @@
 			rgba(110, 231, 183, 0) 10%,
 			rgba(110, 231, 183, 0.1) 30%,
 			rgba(94, 234, 212, 0.2) 40%,
-			/* rgba(125, 211, 252, 0.5) 45	 %, */ rgba(125, 211, 252, 0.5) 53%,
+			rgba(125, 211, 252, 0.5) 53%,
 			rgba(221, 214, 254, 0.5) 57%,
 			rgba(254, 240, 138, 0.1) 65%,
 			rgba(254, 240, 138, 0.1) 70%,
@@ -66,7 +68,7 @@
 			rgba(110, 231, 183, 0) 10%,
 			rgba(110, 231, 183, 0.1) 30%,
 			rgba(94, 234, 212, 0.2) 40%,
-			/* rgba(125, 211, 252, 0.5) 45	 %, */ rgba(125, 211, 252, 0.5) 53%,
+			rgba(125, 211, 252, 0.5) 53%,
 			rgba(221, 214, 254, 0.5) 57%,
 			rgba(254, 240, 138, 0.1) 65%,
 			rgba(254, 240, 138, 0.1) 70%,
@@ -76,7 +78,8 @@
 	}
 
 	section {
-		@apply container mx-auto outline outline-[0.5px] outline-teal-300;
+		@apply outline outline-[0.5px] outline-teal-300;
+		@apply container mx-auto;
 	}
 
 	header section,
@@ -85,7 +88,7 @@
 	}
 
 	main > section {
-		@apply py-12;
+		@apply py-12 px-8;
 	}
 
 	h1,

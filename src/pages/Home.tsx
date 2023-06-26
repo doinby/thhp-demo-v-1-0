@@ -1,9 +1,9 @@
 export default function Home() {
 	return (
 		<main>
-			<div className='prose max-w-none'>
+			<section id='hero' className='prose'>
 				<h1 className='text-5xl leading-tight tracking-tight font-normal'>
-					Giáo dục không phải là sự chuẩn bị cho cuộc sống - Giáo dục chính là cuộc
+					Giáo dục không phải là sự chuẩn bị cho cuộc sống — Giáo dục chính là cuộc
 					sống
 				</h1>
 
@@ -24,7 +24,7 @@ export default function Home() {
 					indispensabile promuovere lo sviluppo di rapporti amichevoli tra le
 					Nazioni;{' '}
 				</p>
-			</div>
+			</section>
 		</main>
 	);
 }

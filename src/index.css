@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@400;800&family=Raleway:wght@400;800&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Geologica:wght@400;800&family=Raleway:wght@400;800&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@300;800&family=Noto+Sans:wght@300;800&family=Raleway:wght@300;800&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,12 +7,85 @@
 
 @layer base {
 	body {
-		font-family: 'Noto Sans', sans-serif;
+		/* font-family: 'Raleway', sans-serif; */
+		font-family: 'Geologica', sans-serif;
+		/* font-family: 'Noto Sans', sans-serif; */
 	}
+
+	/* html,
+	body,
+	#root {
+		@apply h-full;
+	}
+
+	#root {
+		@apply flex flex-col;
+	}
+
 	header,
+	footer {
+		@apply shrink-0;
+	}
+
+	main {
+		@apply grow shrink-0 basis-auto flex place-items-center;
+	} */
+
+	/* header,
 	main,
 	footer {
-		@apply container mx-auto;
+		@apply outline outline-[0.5px] outline-teal-300;
+	} */
+
+	#root {
+		background: rgb(110, 231, 183);
+		background: -moz-linear-gradient(
+			60deg,
+			rgba(110, 231, 183, 0) 10%,
+			rgba(110, 231, 183, 0.1) 30%,
+			rgba(94, 234, 212, 0.2) 40%,
+			/* rgba(125, 211, 252, 0.5) 45	 %, */ rgba(125, 211, 252, 0.5) 53%,
+			rgba(221, 214, 254, 0.5) 57%,
+			rgba(254, 240, 138, 0.1) 65%,
+			rgba(254, 240, 138, 0.1) 70%,
+			rgba(254, 240, 138, 0) 80%
+		);
+		background: -webkit-linear-gradient(
+			60deg,
+			rgba(110, 231, 183, 0) 10%,
+			rgba(110, 231, 183, 0.1) 30%,
+			rgba(94, 234, 212, 0.2) 40%,
+			/* rgba(125, 211, 252, 0.5) 45	 %, */ rgba(125, 211, 252, 0.5) 53%,
+			rgba(221, 214, 254, 0.5) 57%,
+			rgba(254, 240, 138, 0.1) 65%,
+			rgba(254, 240, 138, 0.1) 70%,
+			rgba(254, 240, 138, 0) 80%
+		);
+		background: linear-gradient(
+			60deg,
+			rgba(110, 231, 183, 0) 10%,
+			rgba(110, 231, 183, 0.1) 30%,
+			rgba(94, 234, 212, 0.2) 40%,
+			/* rgba(125, 211, 252, 0.5) 45	 %, */ rgba(125, 211, 252, 0.5) 53%,
+			rgba(221, 214, 254, 0.5) 57%,
+			rgba(254, 240, 138, 0.1) 65%,
+			rgba(254, 240, 138, 0.1) 70%,
+			rgba(254, 240, 138, 0) 80%
+		);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6ee7b7",endColorstr="#fef08a",GradientType=1);
+	}
+
+	section {
+		@apply container mx-auto outline outline-[0.5px] outline-teal-300;
+	}
+
+	header section,
+	footer section {
+		@apply [&>*]:p-3;
+	}
+
+	main > section {
+		@apply py-12;
 	}
 
 	h1,
@@ -19,5 +93,6 @@
 	h3 {
 		/* font-family: 'Geologica', sans-serif; */
 		font-family: 'Raleway', sans-serif;
+		/* font-family: 'Noto Sans', sans-serif; */
 	}
 }
